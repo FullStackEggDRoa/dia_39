@@ -5,10 +5,16 @@
  */
 package Entidad;
 
+import java.util.Date;
+
 /**
  *
  * @author Gabriela
  */
 public class Persona {
+    
+    public String nombre;
+    public String nacionalidad;
+    public Date nacimiento;
     
 }
