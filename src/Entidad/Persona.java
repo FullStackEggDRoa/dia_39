@@ -12,9 +12,16 @@ import java.util.Date;
  * @author Gabriela
  */
 public class Persona {
-    
+
+    public Persona(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Persona() {
+    }
+
     public String nombre;
     public String nacionalidad;
     public Date nacimiento;
-    
+
 }
