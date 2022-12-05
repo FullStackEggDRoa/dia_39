@@ -4,12 +4,26 @@
  */
 package Entidad;
 
+import java.util.Date;
+
 /**
  *
  * @author droa
  */
 public class Persona {
-   
+
     
-    
+   //Atributos
+    public String nombre;
+    public String apellido;
+    public String nacionalidad;
+    public Date nacimiento;
+ 
+    //Constructores
+    public Persona() {
+    }
+
+    public Persona(String nombre) {
+        this.nombre = nombre;
+    }
 }

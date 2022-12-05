@@ -4,6 +4,8 @@
  */
 package creacion_objeto_p5;
 
+import Entidad.Persona;
+
 /**
  *
  * @author droa
@@ -15,6 +17,9 @@ public class Creacion_Objeto_P5 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Persona p1 = new Persona();
+        Persona p2 = new Persona("Daniel");
+        
     }
     
 }
