@@ -13,15 +13,45 @@ import java.util.Date;
  */
 public class Persona {
 
-    public Persona(String nombre) {
+    private String nombre;
+    private String nacionalidad;
+    private Date nacimiento;
+
+    public Persona(String nombre, String nacionalidad) {
         this.nombre = nombre;
+        this.nacionalidad = nacionalidad;
     }
 
     public Persona() {
     }
 
-    public String nombre;
-    public String nacionalidad;
-    public Date nacimiento;
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNacionalidad() {
+        return nacionalidad;
+    }
+
+    public void setNacionalidad(String nacionalidad) {
+        this.nacionalidad = nacionalidad;
+    }
+
+    public Date getNacimiento() {
+        return nacimiento;
+    }
+
+    public void setNacimiento(Date nacimiento) {
+        this.nacimiento = nacimiento;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "nombre=" + nombre + ", nacionalidad=" + nacionalidad + ", nacimiento=" + nacimiento + '}';
+    }
 
 }
