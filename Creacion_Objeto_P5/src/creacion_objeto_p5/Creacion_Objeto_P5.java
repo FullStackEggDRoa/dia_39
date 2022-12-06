@@ -4,6 +4,9 @@
  */
 package creacion_objeto_p5;
 
+import Entidad.Persona;
+import java.util.Date;
+
 /**
  *
  * @author droa
@@ -15,6 +18,17 @@ public class Creacion_Objeto_P5 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Persona p1 = new Persona();
+        Persona p2 = new Persona("Daniel");
+        Date fecha=new Date(122,1,12,2,10,15);
+        
+        p2.setApellido("Roa");
+        //p2.setNacimiento(nacimiento);
+        p2.setNacionalidad("Ecuatoriana");
+        p2.setNacimiento(fecha);
+        
+        System.out.println(p2.getNombre()+" "+p2.getApellido());
+        System.out.println(p2);
     }
     
 }
