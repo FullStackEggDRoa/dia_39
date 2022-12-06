@@ -11,13 +11,13 @@ import java.util.Date;
  * @author droa
  */
 public class Persona {
-
+   
     
    //Atributos
-    public String nombre;
-    public String apellido;
-    public String nacionalidad;
-    public Date nacimiento;
+    private String nombre;
+    private String apellido;
+    private String nacionalidad;
+    private Date nacimiento;
  
     //Constructores
     public Persona() {
@@ -26,4 +26,45 @@ public class Persona {
     public Persona(String nombre) {
         this.nombre = nombre;
     }
+    
+    //Metodos
+    
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getNacionalidad() {
+        return nacionalidad;
+    }
+
+    public void setNacionalidad(String nacionalidad) {
+        this.nacionalidad = nacionalidad;
+    }
+
+    public Date getNacimiento() {
+        return nacimiento;
+    }
+
+    public void setNacimiento(Date nacimiento) {
+        this.nacimiento = nacimiento;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + ", nacionalidad=" + nacionalidad + ", nacimiento=" + nacimiento + '}';
+    }
+    
+     
 }
